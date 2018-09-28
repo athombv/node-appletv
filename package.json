@@ -18,9 +18,6 @@
     "clean": "rimraf dist",
     "docs": "rimraf docs && typedoc --mode modules --excludePrivate --excludeExternals --out ./docs ./src"
   },
-  "bin": {
-    "appletv": "bin/appletv"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/edc1591/node-appletv.git"
@@ -34,7 +31,6 @@
     "ed25519": "0.0.4",
     "fast-srp-hap": "^1.0.1",
     "inquirer": "^5.1.0",
-    "mdns": "^2.3.3",
     "ora": "^2.0.0",
     "protobufjs": "^6.8.4",
     "snake-case": "^2.1.0",

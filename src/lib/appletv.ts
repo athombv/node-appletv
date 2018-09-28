@@ -1,4 +1,3 @@
-import { Service } from 'mdns';
 import * as path from 'path';
 import { load, Message as ProtoMessage } from 'protobufjs'
 import { v4 as uuid } from 'uuid';
@@ -50,7 +49,7 @@ export class AppleTV extends TypedEventEmitter<AppleTV.Events> {
 
   private connection: Connection;
 
-  constructor(private service: Service) {
+  constructor(private service: any) {
     super();
 
     this.service = service;

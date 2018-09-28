@@ -1,5 +1,3 @@
-/// <reference types="mdns" />
-import { Service } from 'mdns';
 import { Credentials } from './credentials';
 import { NowPlayingInfo } from './now-playing-info';
 import { SupportedCommand } from './supported-command';
@@ -32,7 +30,7 @@ export declare class AppleTV extends TypedEventEmitter<AppleTV.Events> {
     pairingId: string;
     credentials: Credentials;
     private connection;
-    constructor(service: Service);
+    constructor(service: any);
     /**
     * Pair with an already discovered AppleTV.
     * @returns A promise that resolves to the AppleTV object.
